@@ -13,6 +13,9 @@ const userSceltaPoD = prompt("Scegli pari o dispari [pari/dispari]")
 const userSceltaNumero = Number(prompt("Scegli un numero da 1 a 5"))
 
 // controlli scelte utente
+if (userSceltaPoD != "pari" && userSceltaPoD != "dispari") {
+    console.log(location.reload())
+}
 if (isNaN(userSceltaNumero)) {
     alert("Non hai scelto un numero");
     console.log(location.reload())
@@ -21,9 +24,7 @@ if (userSceltaNumero < 1 || userSceltaNumero > 5) {
     alert("Non hai scelto un numero da 1 a 5")
     console.log(location.reload())
 }
-if (userSceltaPoD != "pari" && userSceltaPoD != "dispari") {
-    console.log(location.reload())
-}
+
 
 console.log(`Hai scelto ${userSceltaPoD}`)
 console.log(`Hai scelto il numero ${userSceltaNumero}`)
