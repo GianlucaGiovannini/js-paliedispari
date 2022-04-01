@@ -38,11 +38,11 @@ function getRandomInteger(min, max) {
 const pcNumero = getRandomInteger(1, 5);
 console.log(`il numero del pc è ${pcNumero}`)
 
-/* Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione) */
-
-// dichiaro una variabile per salvare la somma che verrà fatta nella funzione ed il risultato
 // sommo i due numeri
 let somma = pcNumero + userSceltaNumero;
+
+/* Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione) */
+// dichiaro una variabile per salvare la somma che verrà fatta nella funzione ed il risultato
 let risultatoPoD;
 
 /**
