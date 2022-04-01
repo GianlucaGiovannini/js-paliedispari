@@ -2,6 +2,30 @@
     Chiedere all’utente di inserire una parola, creare una funzione per capire se la parola inserita è palindroma
 */
 
+/**
+ * #Controllo se una parola è palindroma
+ * @param {string} parola_scelta inserisci la parola che l'utente digita
+ * @returns ti dice se la parola è palindroma o no
+ */
+/* function palindromoControllo(parola_scelta) {
+    let parolaInArray = parolaUser.split("");
+
+    let arrayElementiInvertiti = parolaInArray.reverse();
+
+    let parolaInvertita = parolaInArray.join("");
+
+    if (parolaUser === parolaInvertita) {
+        palindromaSioNO = "la parola è palindroma"
+    } else {
+        palindromaSioNO = "la parola non è palindroma"
+    }
+    return palindromaSioNO;
+}
+console.log(palindromoControllo(parolaUser)) */
+
+
+
+
 // chiedi all'utente di inserire una parola
 const parolaUser = prompt("inserisci una parola")
 console.log(parolaUser)
