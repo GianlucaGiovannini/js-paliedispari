@@ -31,7 +31,7 @@ let palindromaSioNO;
 
 function palindromoControllo(parola_scelta) {
     // trasformo la parola in un array (quindi ogni lettera diventa un elemento)
-    let parolaInArray = parolaUser.split("");
+    let parolaInArray = parola_scelta.split("");
     console.log(parolaInArray);
 
     // invertire la sequenza dell'array 
@@ -43,7 +43,7 @@ function palindromoControllo(parola_scelta) {
     console.log(parolaInvertita);
 
     // controllo se la parola dell'utente è uguale alla parola invertita
-    if (parolaUser === parolaInvertita) {
+    if (parola_scelta === parolaInvertita) {
         palindromaSioNO = "la parola è palindroma"
     } else {
         palindromaSioNO = "la parola non è palindroma"
