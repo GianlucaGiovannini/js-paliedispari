@@ -1,4 +1,4 @@
-/* 
+/* TRACCIA
     L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
     Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
     Sommiamo i due numeri
@@ -8,8 +8,6 @@
 
 /* L’utente sceglie pari o dispari */
 const userSceltaPoD = prompt("Scegli pari o dispari [pari/dispari]")
-
-
 
 /* l'utente sceglie un numero da 1 a 5  */
 const userSceltaNumero = Number(prompt("Scegli un numero da 1 a 5"))

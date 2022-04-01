@@ -1,4 +1,4 @@
-/* 
+/* TRACCIA
     Chiedere all’utente di inserire una parola, creare una funzione per capire se la parola inserita è palindroma
 */
 
@@ -22,9 +22,6 @@
     return palindromaSioNO;
 }
 console.log(palindromoControllo(parolaUser)) */
-
-
-
 
 // chiedi all'utente di inserire una parola
 const parolaUser = prompt("inserisci una parola")
