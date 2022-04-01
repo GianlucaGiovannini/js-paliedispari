@@ -9,11 +9,18 @@
 /* L’utente sceglie pari o dispari */
 const userSceltaPoD = prompt("Scegli pari o dispari [pari/dispari]")
 
+
+
 /* l'utente sceglie un numero da 1 a 5  */
 const userSceltaNumero = Number(prompt("Scegli un numero da 1 a 5"))
 
 if (isNaN(userSceltaNumero)) {
     alert("Non hai scelto un numero");
+    console.log(location.reload())
+}
+
+if (userSceltaPoD != "pari" && userSceltaPoD != "dispari") {
+    console.log(location.reload())
 }
 
 console.log(`Hai scelto ${userSceltaPoD}`)
