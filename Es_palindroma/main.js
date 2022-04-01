@@ -9,7 +9,7 @@ console.log(parolaUser)
 let palindromaSioNO;
 
 function palindromoControllo(parola_scelta) {
-    // trasformo la parola in un array
+    // trasformo la parola in un array (quindi ogni lettera diventa un elemento)
     let parolaInArray = parolaUser.split("");
     console.log(parolaInArray);
 
@@ -27,7 +27,7 @@ function palindromoControllo(parola_scelta) {
     } else {
         palindromaSioNO = "la parola non è palindroma"
     }
-
+    // faccio tornare il risultato del if in base al risultato che ne esce
     return palindromaSioNO;
 }
 // stampo in console la funzione fatta sulla parola dell'utente e mi fa tornare il risultato di "palindromaSioNo"
