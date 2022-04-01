@@ -62,10 +62,10 @@ function parioDispari(num1, num2) {
     }
     return risultatoPoD, sum
 }
-
+// creo una costante così che il console log sotto mi funziona ( credo sia perché è fuori dalla funzione prima che sia inizializzata esternamente alla funzione)
 const risultatoParioDispari = parioDispari(userSceltaNumero, pcNumero);
 
-console.log(`i numeri sommati fanno ${sum} quindi è ${risultatoParioDispari}`);
+console.log(`i numeri sommati fanno ${sum} quindi è ${risultatoPoD}`);
 
 /* Dichiariamo chi ha vinto. */
 let risultato;
