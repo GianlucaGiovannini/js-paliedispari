@@ -21,7 +21,6 @@ if (userSceltaNumero < 1 || userSceltaNumero > 5) {
     alert("Non hai scelto un numero da 1 a 5")
     console.log(location.reload())
 }
-
 if (userSceltaPoD != "pari" && userSceltaPoD != "dispari") {
     console.log(location.reload())
 }
@@ -47,9 +46,9 @@ console.log(`il numero del pc è ${pcNumero}`)
 let somma = pcNumero + userSceltaNumero;
 
 /* Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione) */
-// dichiaro una variabile per salvare la somma che verrà fatta nella funzione ed il risultato
-let risultatoPoD;
-
+/* // dichiaro una variabile per salvare la somma che verrà fatta nella funzione ed il risultato
+let risultatoPoD; // non servve
+ */
 /**
  * #Pari o Dispari ?
  * @param {number} numero numero da controllare se è pari o dispari
