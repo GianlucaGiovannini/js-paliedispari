@@ -41,31 +41,29 @@ console.log(`il numero del pc è ${pcNumero}`)
 /* Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione) */
 
 // dichiaro una variabile per salvare la somma che verrà fatta nella funzione ed il risultato
-let sum;
+// sommo i due numeri
+let somma = pcNumero + userSceltaNumero;
 let risultatoPoD;
 
 /**
- * #somma tra due numeri + risultato pari e dispari
- * @param {number} num1 numero 1
- * @param {number} num2 numero 2
- * @returns se è pari o dispari
+ * #Pari o Dispari ?
+ * @param {number} numero numero da controllare se è pari o dispari
+ * @returns se il numero è pari o dispari
  */
-function parioDispari(num1, num2) {
-    // sommo i due numeri
-    sum = num1 + num2;
+function parioDispari(numero) {
 
     // controllo se la somma è pari o dispari
-    if (sum % 2 == 0) {
+    if (numero % 2 == 0) {
         risultatoPoD = "pari"
     } else {
         risultatoPoD = "dispari"
     }
-    return risultatoPoD, sum
+    return risultatoPoD
 }
 // creo una costante così che il console log sotto mi funziona ( credo sia perché è fuori dalla funzione prima che sia inizializzata esternamente alla funzione)
-const risultatoParioDispari = parioDispari(userSceltaNumero, pcNumero);
+const risultatoParioDispari = parioDispari(somma);
 
-console.log(`i numeri sommati fanno ${sum} quindi è ${risultatoPoD}`);
+console.log(`i numeri sommati fanno ${somma} quindi è ${risultatoPoD}`);
 
 /* Dichiariamo chi ha vinto. */
 let risultato;
