@@ -20,6 +20,12 @@ console.log(`Hai scelto ${userSceltaPoD}`)
 console.log(`Hai scelto il numero ${userSceltaNumero}`)
 
 /* Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione) */
+/**
+ * #Numero casuale tra 2 numeri
+ * @param {number} min inserisci il numero minimo
+ * @param {number} max inserisci il numero massimo
+ * @returns un numero random tra il numero minimo e massimo compresi
+ */
 function getRandomInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -28,10 +34,17 @@ const pcNumero = getRandomInteger(1, 5);
 console.log(`il numero del pc è ${pcNumero}`)
 
 /* Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione) */
-// dichiaro una variabile per salvare la somma che verrà fatta nella funzione
+
+// dichiaro una variabile per salvare la somma che verrà fatta nella funzione ed il risultato
 let sum;
 let risultatoPoD;
 
+/**
+ * #somma tra due numeri + risultato pari e dispari
+ * @param {number} num1 numero 1
+ * @param {number} num2 numero 2
+ * @returns se è pari o dispari
+ */
 function parioDispari(num1, num2) {
     // sommo i due numeri
     sum = num1 + num2;
@@ -42,7 +55,7 @@ function parioDispari(num1, num2) {
     } else {
         risultatoPoD = "dispari"
     }
-    return risultatoPoD
+    return risultatoPoD, sum
 }
 
 const risultatoParioDispari = parioDispari(userSceltaNumero, pcNumero);
