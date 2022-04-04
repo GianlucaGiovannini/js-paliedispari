@@ -53,3 +53,32 @@ function palindromoControllo(parola_scelta) {
 }
 // stampo in console la funzione fatta sulla parola dell'utente e mi fa tornare il risultato di "palindromaSioNo"
 console.log(palindromoControllo(parolaUser))
+
+// SOLUZIONE FABIO
+/**
+ * 
+ * @param {string} word
+ * @returns {string}
+ */
+function reverseWord(word) {
+    return word.split("").reverse().join("")
+
+}
+
+console.log(reverseWord(parolaUser))
+
+function is_palindrom(word) {
+    const reversedWord = reverseWord(word)
+
+    if (reversedWord === word) {
+        return true
+    } else {
+        return false
+    }
+}
+
+if (is_palindrom(parolaUser)) {
+    console.log(parolaUser, " Is palindrom")
+} else {
+    console.log(parolaUser, "Is not palindrom")
+}
